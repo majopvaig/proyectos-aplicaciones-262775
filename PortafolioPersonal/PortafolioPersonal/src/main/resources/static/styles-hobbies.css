@@ -1,0 +1,200 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #105666;
+    color: #0A3323;
+    margin: 20px;
+}
+
+header {
+    background-color: #D3968C;
+    padding: 20px;
+    color: #F7F4D5;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+    flex: 1;
+}
+
+footer {
+    background-color: #D3968C;
+    color: #F7F4D5;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    background-color: #839958;
+    padding: 20px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    float: left;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.item1 h1 {
+    text-align: center;
+}
+
+.item2 h1 {
+    text-align: center;
+}
+
+.item3 h1 {
+    text-align: center;
+}
+
+.item4 h1 {
+    text-align: center;
+}
+
+.item5 h1 {
+    text-align: center;
+}
+
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item1 img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item2 img {
+    width: 350px;
+    float: right;
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.item3 img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.item4 img {
+    width: 125px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.item5 img {
+    width: 250px;
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.item6 h1 {
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.ash {
+    position: absolute;
+    width: 110px;
+    right: 20px;
+    float: right;
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.eiji {
+    left: 20px;
+    position: absolute;
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.satoru {
+    width: 200px;
+    float: left;
+}
+
+.suguru {
+    width: 150px;
+    float: right;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+}
+
+.link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}

@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NebulaMusic - Iniciar Sesión</title>
-    </head>
-    <body>
-        <main class="auth-card">
-            <section class="auth-card">
-                <form method="post" action="/autenticacion">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NebulaMusic - Iniciar Sesión</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+</head>
+
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav>
+        <a class="logo" href="index.html">
+            <img src="../static/imgs/nebula-03.svg" alt="logo Nébula">
+        </a>
+
+        <input type="checkbox" id="menu-toogle">
+        <label for="menu-toogle" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+            <li><a href="registro.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <main class="auth-card">
+        <section class="auth-card">
+
+            <form class="auth-form" method="post" action="/autenticacion" enctype="application/x-www-form-urlencoded">
+
+                <div class="form-logo">
+                    <img src="../static/imgs/nebula-03.svg" alt="Nébula logo">
+                </div>
+
+                <div class="form-header">
+                    <h3>Iniciar Sesión</h3>
+                    <p class="form-subtitle">Ingresar tus credenciales de acceso</p>
+                </div>
+
+                <div class="form-group">
                     <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo">
-                    <br><br>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="form-group">
                     <label for="contrasenia">Contraseña:</label>
-                    <input type="password" id="contrasenia" name="contrasenia">
-                    <br><br>
-                    <input type="submit">
-                    <input type="reset">
-                </form>
-            </section>
-        </main>
+                    <input type="password" id="contrasenia" name="contrasenia" placeholder="Tu contraseña">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                    <button type="reset" class="btn-secondary">Cancelar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
     <footer>
         <p>Copyright Nébula 2026</p>
     </footer>
-    </body>
+</body>
+
 </html>
